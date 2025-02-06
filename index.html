@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="icon" href="./favicons/pokeball.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/sheet.css">
+    <!-- Script -->
+     <script defer src="./js/app.js"></script>
+    <title>Pokédex</title>
+</head>
+<body>
+   <header>
+    <img src="./images/pokedex_logo.png">
+   </header>
+    <main>
+        
+        <div class="pokedex">
+            <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+            
+            <img src="" class="pokemon_image">
+            
+            <h1 class="pokemon_data">
+                <span class="pokemon_number"></span> - 
+                <span class="pokemon_name"></span>
+            </h1>
+
+            <form class="form">
+                <input type="search" class="input_search" placeholder="Name or Number" required><button class="btn_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <div class="buttons">
+                <button class="button btn_prev">&lt;Prev</button>
+                <button class="button btn_next">Next&gt;</button>
+                <button class="button add_btn">Add in your Trainer Card</button>
+            </div>
+
+
+        </div>
+
+        <div class="trainer_data">
+                <label>Type your name:</label>
+                <input type="text" class="input_name">
+                <button class="add_name">Add in Trainer Card</button>
+     
+        </div>
+
+
+        <div class="trainer_card">
+            <img src="./images/pokemon_trainer_card_symbol.png" alt="trainer_card">
+            <div class="trainer_info">
+                <span>Trainer Name:</span>
+                <span class="trainer_name"></span>
+                <button class="btn_clear">&times;</button>
+            </div>
+            <span class="card_text">Your Team:</span>
+            <div class="card_row">
+                <div class="box"><img src="" class="card_image"></div>
+                <div class="box"><img src="" class="card_image"></div>
+                <div class="box"><img src="" class="card_image"></div>
+            </div>
+            <div class="card_row">
+                <div class="box"><img src="" class="card_image"></div>
+                <div class="box"><img src="" class="card_image"></div>
+                <div class="box"><img src="" class="card_image"></div>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+</html>

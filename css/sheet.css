@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    background: linear-gradient(to bottom, rgb(90, 161, 226), #fff) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon_image {
+    position: absolute;
+    width: 20%;
+    height: 18%;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54%;
+    right: 26%;
+    font-size: 1.125rem;
+}
+
+.pokemon_name {
+    color: #444;
+    text-transform: capitalize;
+}
+
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 2%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+    box-shadow: -3px 4px 0 #888;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-47.5%, 0);
+    gap: .75rem;
+}
+
+.button {
+    width: 40%;
+    display: inline;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #344;
+    color: #fff;
+    box-shadow: -2px 4px 0, #222 -4px 6px 0 #222;
+    cursor: pointer;
+    bottom: 10%;
+}
+.add_btn {
+    margin: 2px;
+    width: 80%;
+    padding: 4%;
+    bottom: 10%;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+
+.trainer_card {
+    width: 100%;
+    max-width: 450px;
+    height: auto; /* Ajuste de altura para ser responsivo */
+    border-radius: 10px;
+    background-color: rgb(48, 31, 126);
+    border: 1px solid #bcc;
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.trainer_card img {
+    width: 70%;
+    height: auto; /* Ajuste de altura automática */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
+}
+
+.trainer_info {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    z-index: 10;
+    gap: .5rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.trainer_info span {
+    font-size: .8rem;
+}
+
+.card_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card_row .box {
+    width: 135px;
+    height: 100px;
+    background: #fff;
+    border-radius: 20px;
+    z-index: 1000;
+    margin: 10px;
+}
+
+
+.card_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 15%;
+}
+
+.trainer_data {
+    background: none;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap: 1rem;
+
+}
+
+
+.trainer_data button {
+    background: #344;
+    color: #fff;
+    box-shadow: -2px 4px 0, #222 -4px 6px 0 #222;
+    cursor: pointer;
+    padding: .25rem;
+}
+
+
+.btn_clear {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.card_text {
+    color: #fff;
+    padding: 20px;
+
+}
+
+.btn_search {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    cursor: pointer;
+    color: #778;
+}
+
+
+.input_name {
+    width: 20%;
+}
+
+.btn_search:active {
+    color: dodgerblue;
+}
+
+@media(max-width: 435px) {
+    .button {
+        width: 30%;
+    }    
+}
+
+
