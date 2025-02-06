@@ -178,7 +178,7 @@ main {
 
 .trainer_data {
     background: none;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,14 +244,17 @@ main {
         font-size: .7rem;
     } 
 
+    .trainer_data input {
+        width: 30%;
+        font-size: .3rem;
+    }
+
     .add_btn {
         width: 80%;
         font-size: .62rem;
     }
 
-    .trainer_data label, .trainer_data input, .trainer_data button {
-        font-size: .7rem;
-    }
+
 
         
 }
@@ -281,20 +284,15 @@ main {
         font-size: .9rem;
     }
 
-    .trainer_data .label {
-        width: 100%;
-        font-size: 5px;
-    }
 
     .trainer_data input {
         width: 100%;
-        height: 20%;
+       font-size: 4px;
     }
 
     .add_name{
-        width: 100%;
-    
-        font-size: .4rem;
+        width: 10%;
+      
     }
 }
 
@@ -313,12 +311,6 @@ main {
         font-size: .3rem;
     }
 
-
-    .trainer_data label {
-        width: 100%;
-      
-    }
-
     .trainer_data input {
         width: 100%;
     }
@@ -335,13 +327,19 @@ main {
         font-size: .8rem;
     }
 
-    .trainer_data label, .trainer_data input, .trainer_data button {
-        font-size: .45rem;
+    .trainer_data input, .add_name  {
+        width: 40%;
+       
     }
+
+    .add_name {
+        width: 30%;
+    }
+
 }
 
-@media(max-width: 500px) {
-    .trainer_data label, .trainer_data input, .trainer_data button {
-        font-size: .6rem;
+@media(max-width: 530px) {
+    .trainer_data input, .add_name  {
+        font-size: .7rem;
     }
 }
