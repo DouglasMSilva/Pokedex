@@ -47,7 +47,7 @@ main {
     position: absolute;
     font-weight: 600;
     color: #aaa;
-    top: 54%;
+    top: 55%;
     right: 26%;
     font-size: 1.125rem;
 }
@@ -67,7 +67,7 @@ main {
 
 .input_search {
     width: 100%;
-    padding: 2%;
+    padding: 1%;
     outline: none;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -193,7 +193,7 @@ main {
     color: #fff;
     box-shadow: -2px 4px 0, #222 -4px 6px 0 #222;
     cursor: pointer;
-    padding: .25rem;
+    padding: .2rem;
 }
 
 
@@ -256,3 +256,92 @@ main {
         
 }
 
+
+@media(max-width:250px ) {
+
+    .buttons {
+        margin-top: 45%;
+    }
+
+    .button {
+        width: 40%;
+        font-size: .4rem;
+    }
+
+    .add_btn {
+        width: 80%;
+    }
+    .form {
+        height: 5%;
+        font-size: 1px;
+    }
+
+    .pokemon_data span {
+        margin-bottom: 5px;
+        font-size: .9rem;
+    }
+
+    .trainer_data .label {
+        width: 100%;
+        font-size: 5px;
+    }
+
+    .trainer_data input {
+        width: 100%;
+        height: 20%;
+    }
+
+    .add_name{
+        width: 100%;
+    
+        font-size: .4rem;
+    }
+}
+
+
+@media(max-width:290px ) {
+
+    .button {
+        width: 40%;
+        font-size: .4rem;
+    }
+
+    .add_btn {
+        width: 80%;
+    }
+    .input_search {
+        font-size: .3rem;
+    }
+
+
+    .trainer_data label {
+        width: 100%;
+      
+    }
+
+    .trainer_data input {
+        width: 100%;
+    }
+
+    .add_name{
+        width: 100%;
+    
+        font-size: .5px;
+    }
+}
+
+@media (max-width: 340px) {
+    .input_search {
+        font-size: .8rem;
+    }
+
+    .trainer_data label, .trainer_data input, .trainer_data button {
+        font-size: .45rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .trainer_data label, .trainer_data input, .trainer_data button {
+        font-size: .6rem;
+    }
+}
