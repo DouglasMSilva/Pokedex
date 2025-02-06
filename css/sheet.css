@@ -229,10 +229,30 @@ main {
     color: dodgerblue;
 }
 
-@media(max-width: 435px) {
-    .button {
-        width: 30%;
-    }    
-}
+@media(max-width: 450px) {
 
+    header img {
+        width: 100%;
+        padding: 0 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        width: 40%;
+        font-size: .7rem;
+    } 
+
+    .add_btn {
+        width: 80%;
+        font-size: .62rem;
+    }
+
+    .trainer_data label, .trainer_data input, .trainer_data button {
+        font-size: .7rem;
+    }
+
+        
+}
 
